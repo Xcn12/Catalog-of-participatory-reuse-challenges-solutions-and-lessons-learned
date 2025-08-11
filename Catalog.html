@@ -1,3 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.filter-input {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Catalog</h2>
+
+
+<input type="text" id="themeInput" class="filter-input" onkeyup="filterTable()" placeholder="Search for themes..." title="Type in a theme">
+<input type="text" id="areaInput" class="filter-input" onkeyup="filterTable()" placeholder="Search for areas..." title="Type in an area">
+<input type="text" id="challengeInput" class="filter-input" onkeyup="filterTable()" placeholder="Search for challenges..." title="Type in a challenge">
+
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -6,9 +66,13 @@
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 </style>
-<table class="tg"><thead>
+
+
+
+<table id="myTable">
+<tr class="tg"><thead>
   <tr>
-    <th class="tg-0pky">A. Participatory reuse phases</th>
+    <th class="tg-0pky">A. Participatory reuse Themes</th>
     <th class="tg-0pky">B. Participatory reuse areas</th>
     <th class="tg-0pky">C. Participatory reuse challenges</th>
     <th class="tg-0pky">D. Case organizations (challenges)</th>
@@ -20,7 +84,7 @@
   </tr></thead>
 <tbody>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Design and architecture</td>
     <td class="tg-0pky">Hard to find the appropriate abstraction level and classification of reusable assets</td>
     <td class="tg-0pky">HP, Google, and S-Group Solutions</td>
@@ -28,10 +92,10 @@
     <td class="tg-0pky">Suggested providing early support in identifying the common reusable assets before implementation</td>
     <td class="tg-0pky">Google</td>
     <td class="tg-0pky">Google:<br> <a href="https://doi.org/10.1145/2593850.2593854"><span style="color:#905">https://doi.org/10.1145/2593850.2593854</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/common-requirements" target="_blank" rel="noopener noreferrer">Common Requirements</a></td>
+    <td class="tg-0pky">Common Requirements</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Design and architecture</td>
     <td class="tg-0pky">Use-case mismatch between reusable assets and consumer teams’ needs</td>
     <td class="tg-0pky">GlobalSoft</td>
@@ -39,10 +103,10 @@
     <td class="tg-0pky">Collaborative development</td>
     <td class="tg-0pky">GlobalSoft</td>
     <td class="tg-0pky">GlobalSoft:<br> <a href="https://researchrepository.ul.ie/articles/thesis/Supporting_product_development_with_software_from_the_bazaar/19831822?file=35257462"><span style="color:#905">https://researchrepository.ul.ie/articles/thesis/Supporting_product_development_with_software_from_the_bazaar/19831822?file=35257462</span></a>, <br> <a href="https://doi.org/10.1016/j.infsof.2011.06.007"><span style="color:#905">https://doi.org/10.1016/j.infsof.2011.06.007</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/common-requirements" target="_blank" rel="noopener noreferrer">Common Requirements</a></td>
+    <td class="tg-0pky">Common Requirements</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Design and architecture</td>
     <td class="tg-0pky">Use-case mismatch between reusable assets and consumer teams’ needs</td>
     <td class="tg-0pky">GlobalSoft</td>
@@ -50,10 +114,10 @@
     <td class="tg-0pky">Balance the central team’s vision and consider consumer teams’ needs when developing common reusable assets</td>
     <td class="tg-0pky">Lucent </td>
     <td class="tg-0pky">Lucent: <br> <a href="https://doi.org/10.1145/1083258.1083264"><span style="color:#905">https://doi.org/10.1145/1083258.1083264</span></a>, <br> <a href="https://dl.acm.org/doi/10.1145/1134285.1134352"><span style="color:#905">https://dl.acm.org/doi/10.1145/1134285.1134352</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/transparent-cross-team-decision-making-using-rfcs" target="_blank" rel="noopener noreferrer">Transparent Cross-Team Decision Making using RFCs</a></td>
+    <td class="tg-0pky">Transparent Cross-Team Decision Making using RFCs</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Design and architecture</td>
     <td class="tg-0pky">Architecture misalignment between common reusable assets and new consumers’ assets</td>
     <td class="tg-0pky">GlobalSoft</td>
@@ -61,10 +125,10 @@
     <td class="tg-0pky">Design an architecture that can preserve the core architecture and allow consumer customization</td>
     <td class="tg-0pky">Lucent </td>
     <td class="tg-0pky">Lucent:<br> <a href="https://dl.acm.org/doi/10.1145/1134285.1134352"><span style="color:#905">https://dl.acm.org/doi/10.1145/1134285.1134352</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/common-requirements" target="_blank" rel="noopener noreferrer">Common Requirements</a></td>
+    <td class="tg-0pky">Common Requirements</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Design and architecture</td>
     <td class="tg-0pky">Architecture misalignment between common reusable assets and new consumers’ assets</td>
     <td class="tg-0pky">GlobalSoft</td>
@@ -72,10 +136,10 @@
     <td class="tg-0pky">The reusable assets candidates should be common to multiple teams and easy to extend both in the asset itself and its architecture, such as microservices</td>
     <td class="tg-0pky">Ericsson</td>
     <td class="tg-0pky">Ericsson:<br> <a href="https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/"><span style="color:#905">https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/</span></a>,<br> <a href="https://doi.org/10.48550/arXiv.2309.15175"><span style="color:#905">https://doi.org/10.48550/arXiv.2309.15175</span></a>, </td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/common-requirements" target="_blank" rel="noopener noreferrer">Common Requirements</a></td>
+    <td class="tg-0pky">Common Requirements</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Design and architecture</td>
     <td class="tg-0pky">Hard to scope reusable assets conflicting requirements among consumer teams leading to challenges in aligning the purpose and scope of common reusable assets</td>
     <td class="tg-0pky">Ericsson</td>
@@ -83,10 +147,10 @@
     <td class="tg-0pky">The reusable assets candidates could be projects that rely on third-party vendors, are immature, needed by various teams, and have sound and modular architecture</td>
     <td class="tg-0pky">Lucent</td>
     <td class="tg-0pky">Lucent: <br> <a href="https://doi.org/10.1145/1083258.1083264"><span style="color:#905">https://doi.org/10.1145/1083258.1083264</span></a>, <br> <a href="https://dl.acm.org/doi/10.1145/1134285.1134352"><span style="color:#905">https://dl.acm.org/doi/10.1145/1134285.1134352</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/common-requirements" target="_blank" rel="noopener noreferrer">Common Requirements</a></td>
+    <td class="tg-0pky">Common Requirements</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Development and contribution</td>
     <td class="tg-0pky">License issues and intellectualproperty rights restrictions</td>
     <td class="tg-0pky">Google, HP, EuropaceAG </td>
@@ -94,10 +158,10 @@
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/innersource-license" target="_blank" rel="noopener noreferrer">InnerSource License</a></td>
+    <td class="tg-0pky">InnerSource License</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Development and contribution</td>
     <td class="tg-0pky">The bottleneck in the centralteam to address consumerteams’ requests</td>
     <td class="tg-0pky">GlobalSoft,Ericsson</td>
@@ -108,7 +172,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Development and contribution</td>
     <td class="tg-0pky">The bottleneck in the centralteam to address consumerteams’ requests</td>
     <td class="tg-0pky">GlobalSoft,Ericsson</td>
@@ -119,7 +183,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Development and contribution</td>
     <td class="tg-0pky">Unfit contributions due to the misalignment in the general development rules or generic product requirements</td>
     <td class="tg-0pky">Ericsson,<br>  GlobalSoft</td>
@@ -130,7 +194,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Development and contribution</td>
     <td class="tg-0pky">Unfit contributions due to the misalignment in the general development rules or generic product requirements</td>
     <td class="tg-0pky">Ericsson,<br>  GlobalSoft</td>
@@ -138,10 +202,10 @@
     <td class="tg-0pky">Have a clear and detailed contribution mechanism</td>
     <td class="tg-0pky">GlobalSoft, Ericsson</td>
     <td class="tg-0pky">GlobalSoft:<br> <a href="https://researchrepository.ul.ie/articles/thesis/Supporting_product_development_with_software_from_the_bazaar/19831822?file=35257462"><span style="color:#905">https://researchrepository.ul.ie/articles/thesis/Supporting_product_development_with_software_from_the_bazaar/19831822?file=35257462</span></a>,<br> <a href="https://dl.acm.org/doi/abs/10.1016/j.infsof.2011.06.007"><span style="color:#905">https://dl.acm.org/doi/abs/10.1016/j.infsof.2011.06.007</span></a><br> Ericsson:<br> <a href="https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/"><span style="color:#905">https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/base-documentation" target="_blank" rel="noopener noreferrer">Standard base documentation</a></td>
+    <td class="tg-0pky">Standard base documentation</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Development and contribution</td>
     <td class="tg-0pky">Unfit contributions due to the misalignment in the general development rules or generic product requirements</td>
     <td class="tg-0pky">Ericsson,<br>  GlobalSoft</td>
@@ -152,7 +216,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Development and contribution</td>
     <td class="tg-0pky">Unfit contributions due to the misalignment in the general development rules or generic product requirements</td>
     <td class="tg-0pky">Ericsson,<br>  GlobalSoft</td>
@@ -163,7 +227,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Development and contribution</td>
     <td class="tg-0pky">Unfit contributions due to the misalignment in the general development rules or generic product requirements</td>
     <td class="tg-0pky">Ericsson,<br>  GlobalSoft</td>
@@ -171,10 +235,10 @@
     <td class="tg-0pky">The central team needs to provide support to consumer teams in participatory reuse</td>
     <td class="tg-0pky">Lucent</td>
     <td class="tg-0pky">Lucent:<br> <a href="https://dl.acm.org/doi/10.1145/1646353.1646392"><span style="color:#905">https://dl.acm.org/doi/10.1145/1646353.1646392</span></a><br> </td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/group-support" target="_blank" rel="noopener noreferrer">Group support</a></td>
+    <td class="tg-0pky">Group support</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Development and contribution</td>
     <td class="tg-0pky">Unfit contributions due to the misalignment in the general development rules or generic product requirements</td>
     <td class="tg-0pky">Ericsson,<br>  GlobalSoft</td>
@@ -182,10 +246,10 @@
     <td class="tg-0pky">Establish and enforce common principles in large scale participatory reuse to prevent conflicting implementations</td>
     <td class="tg-0pky">Ericsson</td>
     <td class="tg-0pky">Ericsson: <br> <a href="https://doi.org/10.48550/arXiv.2309.15175"><span style="color:#905">https://doi.org/10.48550/arXiv.2309.15175</span></a><br> <a href="https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/"><span style="color:#905">https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/base-documentation" target="_blank" rel="noopener noreferrer">Standard base documentation</a></td>
+    <td class="tg-0pky">Standard base documentation</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Development and contribution</td>
     <td class="tg-0pky">Lack of time for developing common reusable assets</td>
     <td class="tg-0pky">Philips Healthcare, S-Group Solutions</td>
@@ -196,7 +260,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Development and contribution</td>
     <td class="tg-0pky">Lack of time for developing common reusable assets</td>
     <td class="tg-0pky">Philips Healthcare, S-Group Solutions</td>
@@ -204,10 +268,10 @@
     <td class="tg-0pky">Start small to create a foundation for gradual momentum towards larger changes</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">PayPal:<br> <a href="https://doi.org/10.1177/00081256211044830"><span style="color:#905">https://doi.org/10.1177/00081256211044830</span></a>, <br> Zalando: <br> <a href="https://doi.org/10.1177/00081256211044830"><span style="color:#905">https://doi.org/10.1177/00081256211044830</span></a>,<br> IBM: <br> <a href="https://ieeexplore.ieee.org/document/5386734"><span style="color:#905">https://ieeexplore.ieee.org/document/5386734</span></a>,<br> Philips Healthcare: <br> <a href="https://doi.org/10.1177/00081256211044830"><span style="color:#905">https://doi.org/10.1177/00081256211044830</span></a>, <br> <a href="https://ieeexplore.ieee.org/document/4497766"><span style="color:#905">https://ieeexplore.ieee.org/document/4497766</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/start-as-experiment" target="_blank" rel="noopener noreferrer">Start as an Experiment</a></td>
+    <td class="tg-0pky">Start as an Experiment</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Development and contribution</td>
     <td class="tg-0pky">Lack of contributions from product managers and non-developers</td>
     <td class="tg-0pky">Europace AG</td>
@@ -218,7 +282,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Development and contribution</td>
     <td class="tg-0pky">Lack of contributions from product managers and non-developers</td>
     <td class="tg-0pky">Europace AG</td>
@@ -226,10 +290,10 @@
     <td class="tg-0pky">Manage participatory reuse beyond top-down approaches, such as collaborative development</td>
     <td class="tg-0pky">Philips Healthcare </td>
     <td class="tg-0pky">Philips Healthcare: <br> <a href="https://ieeexplore.ieee.org/document/4497766"><span style="color:#905">https://ieeexplore.ieee.org/document/4497766</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/contracted-contributor" target="_blank" rel="noopener noreferrer">Contracted Contributor</a></td>
+    <td class="tg-0pky">Contracted Contributor</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Maintenance</td>
     <td class="tg-0pky">Hard to manage and maintain the changes made from various consumer teams</td>
     <td class="tg-0pky">Google, S-Group Solutions, Siemens, Lucent </td>
@@ -237,10 +301,10 @@
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/extensions-for-sustainable-growth" target="_blank" rel="noopener noreferrer">Extensions for Sustainable Growth</a></td>
+    <td class="tg-0pky">Extensions for Sustainable Growth</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Maintenance</td>
     <td class="tg-0pky">Hard to manage and maintain the changes made from various consumer teams</td>
     <td class="tg-0pky">Google, S-Group Solutions, Siemens, Lucent </td>
@@ -251,7 +315,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Maintenance</td>
     <td class="tg-0pky">Hard to manage and maintain the changes made from various consumer teams</td>
     <td class="tg-0pky">Google, S-Group Solutions, Siemens, Lucent </td>
@@ -262,7 +326,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Maintenance</td>
     <td class="tg-0pky">The ownership issues of reusable assets</td>
     <td class="tg-0pky">S-Group Solutions, Philips Healthcare</td>
@@ -270,10 +334,10 @@
     <td class="tg-0pky">Suggested to have a clear strategy of ownership</td>
     <td class="tg-0pky">S-Group Solutions</td>
     <td class="tg-0pky">S-Group Solutions:<br> <a href="https://doi.org/10.1145/3593434.3593466"><span style="color:#905">https://doi.org/10.1145/3593434.3593466</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/30-day-warranty" target="_blank" rel="noopener noreferrer">30 Day Warranty</a></td>
+    <td class="tg-0pky">30 Day Warranty</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Maintenance</td>
     <td class="tg-0pky">Discrepancy issues in version management due to the unaligned release cycles between the central team and consumer teams</td>
     <td class="tg-0pky">Ericsson</td>
@@ -281,21 +345,21 @@
     <td class="tg-0pky">Implemented a shorter cycle for reusable assets and extended the deprecation period for consumer teams</td>
     <td class="tg-0pky">Ericsson</td>
     <td class="tg-0pky">Ericsson: <br> <a href="https://doi.org/10.48550/arXiv.2309.15175"><span style="color:#905">https://doi.org/10.48550/arXiv.2309.15175</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/service-vs-library" target="_blank" rel="noopener noreferrer">Service vs. Library</a></td>
+    <td class="tg-0pky">Service vs. Library</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Tools and infrastructure</td>
     <td class="tg-0pky">Technical misalignment, such as deployment and configuration maturity, among teams</td>
     <td class="tg-0pky">Ericsson, Lucent</td>
     <td class="tg-0pky">Ericsson: <br> <a href="https://doi.org/10.48550/arXiv.2309.15175"><span style="color:#905">https://doi.org/10.48550/arXiv.2309.15175</span></a>,<br> Lucent: <br> <a href="https://dl.acm.org/doi/10.1145/1134285.1134352"><span style="color:#905">https://dl.acm.org/doi/10.1145/1134285.1134352</span></a></td>
-    <td class="tg-0pky">1). Define different phases of flexible deployment. 2) Developed more prescriptive guidelines for integration and configuration. 3) Used the same test framework.</td>
+    <td class="tg-0pky">1). Define different Themes of flexible deployment. 2) Developed more prescriptive guidelines for integration and configuration. 3) Used the same test framework.</td>
     <td class="tg-0pky">Ericsson</td>
     <td class="tg-0pky">Ericsson: <br> <a href="https://doi.org/10.48550/arXiv.2309.15175"><span style="color:#905">https://doi.org/10.48550/arXiv.2309.15175</span></a></td>
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Tools and infrastructure</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
@@ -306,7 +370,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Tools and infrastructure</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
@@ -317,7 +381,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Tools and infrastructure</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
@@ -325,10 +389,10 @@
     <td class="tg-0pky">Have an infrastructure to manage the reusable assets centrally and effectively, which also protects valuable IP and provides support in contribution, integration and configuration</td>
     <td class="tg-0pky">Google, Philips Healthcare, HP, Ericsson and Google</td>
     <td class="tg-0pky">Google: <br> <a href="https://doi.org/10.1145/2593850.2593854"><span style="color:#905">https://doi.org/10.1145/2593850.2593854</span></a>, <br> Philips Healthcare: <br> <a href="https://ieeexplore.ieee.org/document/4497766"><span style="color:#905">https://ieeexplore.ieee.org/document/4497766</span></a>, <br> HP: chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/<a href="https://shiftleft.com/mirrors/www.hpl.hp.com/techreports/2001/HPL-2001-135.pdf"><span style="color:#905">https://shiftleft.com/mirrors/www.hpl.hp.com/techreports/2001/HPL-2001-135.pdf</span></a>,<br> <a href="https://doi.org/10.1145/581339.581363"><span style="color:#905">https://doi.org/10.1145/581339.581363</span></a>, <br> Ericsson: <br> <a href="https://doi.org/10.48550/arXiv.2309.15175"><span style="color:#905">https://doi.org/10.48550/arXiv.2309.15175</span></a> <br> Google: <br> <a href="https://doi.org/10.1145/2593850.2593854"><span style="color:#905">https://doi.org/10.1145/2593850.2593854</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/innersource-portal" target="_blank" rel="noopener noreferrer">InnerSource Portal</a></td>
+    <td class="tg-0pky">InnerSource Portal </td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Test and code review</td>
     <td class="tg-0pky">Hard to prioritize the contribution review tasks</td>
     <td class="tg-0pky">Lucent</td>
@@ -339,7 +403,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 1: Developing reusable assets</td>
+    <td class="tg-0pky">Theme 1: Developing reusable assets</td>
     <td class="tg-0pky">Test and code review</td>
     <td class="tg-0pky">Hard to prioritize the contribution review tasks</td>
     <td class="tg-0pky">Lucent</td>
@@ -347,10 +411,10 @@
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/extensions-for-sustainable-growth" target="_blank" rel="noopener noreferrer">Extensions for Sustainable Growth</a></td>
+    <td class="tg-0pky">Extensions for Sustainable Growth</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 2: Using reusable assets</td>
+    <td class="tg-0pky">Theme 2: Using reusable assets</td>
     <td class="tg-0pky">Reuse and integration</td>
     <td class="tg-0pky">Hard to integrate because of the immature common reusable assets</td>
     <td class="tg-0pky">GlobalSoft, Ericsson, Google</td>
@@ -361,7 +425,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 2: Using reusable assets</td>
+    <td class="tg-0pky">Theme 2: Using reusable assets</td>
     <td class="tg-0pky">Reuse and integration</td>
     <td class="tg-0pky">Hard to integrate because of the immature common reusable assets</td>
     <td class="tg-0pky">GlobalSoft, Ericsson, Google</td>
@@ -369,10 +433,10 @@
     <td class="tg-0pky">Suggested to 1). test rigorously for better quality, 2) the common reusable assets should be upgradeable and manageable, 3). provide detailed guidelines for integration and configuration</td>
     <td class="tg-0pky">Ericsson</td>
     <td class="tg-0pky">Ericsson:<br> <a href="https://doi.org/10.48550/arXiv.2309.15175"><span style="color:#905">https://doi.org/10.48550/arXiv.2309.15175</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/release-process" target="_blank" rel="noopener noreferrer">Standard Release Process</a></td>
+    <td class="tg-0pky">Standard Release Process</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 2: Using reusable assets</td>
+    <td class="tg-0pky">Theme 2: Using reusable assets</td>
     <td class="tg-0pky">Reuse and integration</td>
     <td class="tg-0pky">Hard to integrate because of the immature common reusable assets</td>
     <td class="tg-0pky">GlobalSoft, Ericsson, Google</td>
@@ -383,7 +447,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 2: Using reusable assets</td>
+    <td class="tg-0pky">Theme 2: Using reusable assets</td>
     <td class="tg-0pky">Reuse and integration</td>
     <td class="tg-0pky">Miss functionalities in the common reusable assets</td>
     <td class="tg-0pky">GlobalSoft, Google</td>
@@ -394,7 +458,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 2: Using reusable assets</td>
+    <td class="tg-0pky">Theme 2: Using reusable assets</td>
     <td class="tg-0pky">Reuse and integration</td>
     <td class="tg-0pky">Misaligned architecture or programming paradigm between reusable assets and consumers’ applications</td>
     <td class="tg-0pky">GlobalSoft, Google</td>
@@ -405,7 +469,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 2: Using reusable assets</td>
+    <td class="tg-0pky">Theme 2: Using reusable assets</td>
     <td class="tg-0pky">Reuse and integration</td>
     <td class="tg-0pky">Lack of reusable assets discoverability</td>
     <td class="tg-0pky">Google, S-Group Solutions</td>
@@ -413,10 +477,10 @@
     <td class="tg-0pky">1).Suggested to list available reusable artifacts in an internal portal<br> 2). Suggested various tools and techniques for searching the reusable assets<br> 3). Suggested to manage and group similar user stories, restructure the code repository, and enhance the documentation and traceabilities between reusable assets and applications that reuse them</td>
     <td class="tg-0pky">Google, S-Group Solutions</td>
     <td class="tg-0pky">Google: <br> <a href="https://doi.org/10.1145/2593850.2593854"><span style="color:#905">https://doi.org/10.1145/2593850.2593854</span></a><br> S-Group Solutions: <br> DOI: 10.37190/e-Inf220110.</td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/innersource-portal" target="_blank" rel="noopener noreferrer">InnerSource Portal</a></td>
+    <td class="tg-0pky">InnerSource Portal </td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 2: Using reusable assets</td>
+    <td class="tg-0pky">Theme 2: Using reusable assets</td>
     <td class="tg-0pky">Reuse and integration</td>
     <td class="tg-0pky">Steep learning curve regarding different technologies for consumers to use the common reusable assets</td>
     <td class="tg-0pky">Ericsson</td>
@@ -427,7 +491,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 2: Using reusable assets</td>
+    <td class="tg-0pky">Theme 2: Using reusable assets</td>
     <td class="tg-0pky">Reuse and integration</td>
     <td class="tg-0pky">Hinder the development of new skills and knowledge due to the reliance on existing solutions, or reliance on existing solutions</td>
     <td class="tg-0pky">S-Group Solutions</td>
@@ -438,7 +502,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Plans and roadmaps</td>
     <td class="tg-0pky">No clear plans regarding reusable assets development and their upgrading in existing applications</td>
     <td class="tg-0pky">S-Group Solutions </td>
@@ -446,10 +510,10 @@
     <td class="tg-0pky">Suggested to 1). Plan reusable assets based on requirements and update them in existing applications. 2). Have a role to maintain the roadmap of the common reusable assets</td>
     <td class="tg-0pky">S-Group Solutions</td>
     <td class="tg-0pky">S-Group Solutions:<br> <a href="https://doi.org/10.1145/3593434.3593466"><span style="color:#905">https://doi.org/10.1145/3593434.3593466</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/issue-tracker" target="_blank" rel="noopener noreferrer">Issue Tracker Use Cases</a></td>
+    <td class="tg-0pky">Issue Tracker Use Cases</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Documentation and knowledge sharing</td>
     <td class="tg-0pky">Lack of documentation and its automation</td>
     <td class="tg-0pky">GlobalSoft, S-Group Solutions, HP, Siemens</td>
@@ -457,10 +521,10 @@
     <td class="tg-0pky">Used wiki and mailing lists to communicate and share knowledge, automated the generation of documentation</td>
     <td class="tg-0pky">GlobalSoft, S-Group Solutions</td>
     <td class="tg-0pky">GlobalSoft:<br> <a href="https://researchrepository.ul.ie/articles/thesis/Supporting_product_development_with_software_from_the_bazaar/19831822?file=35257462"><span style="color:#905">https://researchrepository.ul.ie/articles/thesis/Supporting_product_development_with_software_from_the_bazaar/19831822?file=35257462</span></a>, <br> <a href="https://doi.org/10.1016/j.infsof.2011.06.007"><span style="color:#905">https://doi.org/10.1016/j.infsof.2011.06.007</span></a>,<br> S-Group Solutions: <br> DOI: 10.37190/e-Inf220110.</td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/communication-tooling" target="_blank" rel="noopener noreferrer">Communication Tooling</a></td>
+    <td class="tg-0pky">Communication Tooling</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Documentation and knowledge sharing</td>
     <td class="tg-0pky">Lack of documentation and its automation</td>
     <td class="tg-0pky">GlobalSoft, S-Group Solutions, HP, Siemens</td>
@@ -468,10 +532,10 @@
     <td class="tg-0pky">Suggest to write documentation for technical and non-technical people</td>
     <td class="tg-0pky">S-Group Solutions</td>
     <td class="tg-0pky">S-Group Solutions: <br> DOI: 10.37190/e-Inf220110.</td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/document-your-guiding-principles" target="_blank" rel="noopener noreferrer">Document your Guiding Principles</a></td>
+    <td class="tg-0pky">Document your Guiding<br> Principles</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Documentation and knowledge sharing</td>
     <td class="tg-0pky">Lack of documentation and its automation</td>
     <td class="tg-0pky">GlobalSoft, S-Group Solutions, HP, Siemens</td>
@@ -479,10 +543,10 @@
     <td class="tg-0pky">Suggest to write documentation for technical and non-technical people</td>
     <td class="tg-0pky">S-Group Solutions</td>
     <td class="tg-0pky">S-Group Solutions: <br> DOI: 10.37190/e-Inf220110.</td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/base-documentation" target="_blank" rel="noopener noreferrer">Standard Base Documentation</a></td>
+    <td class="tg-0pky">Standard Base Documentation</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Documentation and knowledge sharing</td>
     <td class="tg-0pky">Lack of knowledge sharing between teams</td>
     <td class="tg-0pky">GlobalSoft, S-Group Solutions</td>
@@ -493,7 +557,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Documentation and knowledge sharing</td>
     <td class="tg-0pky">Lack of knowledge sharing between teams</td>
     <td class="tg-0pky">GlobalSoft, S-Group Solutions</td>
@@ -504,7 +568,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Documentation and knowledge sharing</td>
     <td class="tg-0pky">Lack of knowledge sharing between teams</td>
     <td class="tg-0pky">GlobalSoft, S-Group Solutions</td>
@@ -512,10 +576,10 @@
     <td class="tg-0pky">Have transparency in source code</td>
     <td class="tg-0pky">Lucent </td>
     <td class="tg-0pky">Lucent: <br> <a href="https://doi.org/10.1145/1083258.1083264"><span style="color:#905">https://doi.org/10.1145/1083258.1083264</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/innersource-portal" target="_blank" rel="noopener noreferrer">InnerSource Portal</a></td>
+    <td class="tg-0pky">InnerSource Portal </td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Documentation and knowledge sharing</td>
     <td class="tg-0pky">Lack of knowledge sharing between teams</td>
     <td class="tg-0pky">GlobalSoft, S-Group Solutions</td>
@@ -523,10 +587,10 @@
     <td class="tg-0pky">Publish and advertise participatory reuse related assets or information, e.g., common reusable assets, release cycle from the central team</td>
     <td class="tg-0pky">Lucent, PayPal</td>
     <td class="tg-0pky">Lucent: <br> <a href="https://dl.acm.org/doi/10.1145/1134285.1134352"><span style="color:#905">https://dl.acm.org/doi/10.1145/1134285.1134352</span></a>, <br> <a href="https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/"><span style="color:#905">https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/</span></a>, <br> PayPal:<br> <a href="https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/"><span style="color:#905">https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/innersource-portal" target="_blank" rel="noopener noreferrer">InnerSource Portal</a></td>
+    <td class="tg-0pky">InnerSource Portal </td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Documentation and knowledge sharing</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
@@ -537,7 +601,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Communication and collaboration</td>
     <td class="tg-0pky">Lack of leaders in participatory reuse</td>
     <td class="tg-0pky">HP</td>
@@ -545,10 +609,10 @@
     <td class="tg-0pky">Suggested to hire individuals with such skill</td>
     <td class="tg-0pky">HP </td>
     <td class="tg-0pky">HP: <br> chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/<a href="https://shiftleft.com/mirrors//www.hpl.hp.com/techreports/2002/HPL-2002-12.pdf"><span style="color:#905">https://shiftleft.com/mirrors//www.hpl.hp.com/techreports/2002/HPL-2002-12.pdf</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/dedicated-community-leader" target="_blank" rel="noopener noreferrer">Dedicated Community Leader</a></td>
+    <td class="tg-0pky">Dedicated Community Leader</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Communication and collaboration</td>
     <td class="tg-0pky">Lack of leaders in participatory reuse</td>
     <td class="tg-0pky">HP</td>
@@ -556,10 +620,10 @@
     <td class="tg-0pky">Having a leadership role ensures the adoption of participatory reuse</td>
     <td class="tg-0pky">Lucent, HP, PayPal, Zalando, Philips Healthcare, IBM</td>
     <td class="tg-0pky">Lucent: <br> <a href="https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/"><span style="color:#905">https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/</span></a>, <br> HP: <br> chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/<a href="https://shiftleft.com/mirrors/www.hpl.hp.com/techreports/2001/HPL-2001-135.pdf"><span style="color:#905">https://shiftleft.com/mirrors/www.hpl.hp.com/techreports/2001/HPL-2001-135.pdf</span></a>, <br> <a href="https://doi.org/10.1145/581339.581363"><span style="color:#905">https://doi.org/10.1145/581339.581363</span></a>,<br> PayPal: <br> <a href="https://doi.org/10.1177/00081256211044830"><span style="color:#905">https://doi.org/10.1177/00081256211044830</span></a>, <br> <a href="https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/"><span style="color:#905">https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/</span></a>, <br> Zalando:<br> <a href="https://doi.org/10.1177/00081256211044830"><span style="color:#905">https://doi.org/10.1177/00081256211044830</span></a>, <br> Philips Healthcare:<br> <a href="https://doi.org/10.1177/00081256211044830"><span style="color:#905">https://doi.org/10.1177/00081256211044830</span></a>, <br> IBM:<br> <a href="https://ieeexplore.ieee.org/document/5386734"><span style="color:#905">https://ieeexplore.ieee.org/document/5386734</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/dedicated-community-leader" target="_blank" rel="noopener noreferrer">Dedicated Community Leader</a></td>
+    <td class="tg-0pky">Dedicated Community Leader</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Communication and collaboration</td>
     <td class="tg-0pky">Hard to assign participatory reuse tasks to developers withthe right skills and knowledge in a hierarchical organization</td>
     <td class="tg-0pky">HP</td>
@@ -567,10 +631,10 @@
     <td class="tg-0pky">Managers should offer incentives to boost developers’engagement in participatory reuse.</td>
     <td class="tg-0pky">HP</td>
     <td class="tg-0pky">HP: <br> chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/<a href="https://ex.hhs.se/dissertations/220910-FULLTEXT01.pdf"><span style="color:#905">https://ex.hhs.se/dissertations/220910-FULLTEXT01.pdf</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/gig-marketplace" target="_blank" rel="noopener noreferrer">Gig Marketplace</a></td>
+    <td class="tg-0pky">Gig Marketplace</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Communication and collaboration</td>
     <td class="tg-0pky">Hard to assign participatory reuse tasks to developers withthe right skills and knowledge in a hierarchical organization</td>
     <td class="tg-0pky">HP</td>
@@ -581,7 +645,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Communication and collaboration</td>
     <td class="tg-0pky">Limitations in both onsite (not digitalized) and digital (lack of trust and clarity) communication</td>
     <td class="tg-0pky">Europace AG</td>
@@ -589,10 +653,10 @@
     <td class="tg-0pky">Had informal face-to-face warm-up activities to familiarize people with each other and help them understand participatory reuse more</td>
     <td class="tg-0pky">EuropaceAG</td>
     <td class="tg-0pky">EuropaceAG: <br> <a href="https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/"><span style="color:#905">https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/communication-tooling" target="_blank" rel="noopener noreferrer">Communication Tooling</a></td>
+    <td class="tg-0pky">Communication Tooling</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Communication and collaboration</td>
     <td class="tg-0pky">Lack of communication when creating reusable assets</td>
     <td class="tg-0pky">S-Group Solutions </td>
@@ -600,10 +664,10 @@
     <td class="tg-0pky">Suggested to establish a clearer communication structure in Microsoft Teams, better manage wiki changelogs, and specify the guardian of the reusable assets</td>
     <td class="tg-0pky">S-Group Solutions</td>
     <td class="tg-0pky">S-Group Solutions:<br> <a href="https://doi.org/10.1145/3593434.3593466"><span style="color:#905">https://doi.org/10.1145/3593434.3593466</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/communication-tooling" target="_blank" rel="noopener noreferrer">Communication Tooling</a></td>
+    <td class="tg-0pky">Communication Tooling</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Communication and collaboration</td>
     <td class="tg-0pky">Lack of communication when creating reusable assets</td>
     <td class="tg-0pky">S-Group Solutions</td>
@@ -614,7 +678,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Communication and collaboration</td>
     <td class="tg-0pky">Lack of communication when creating reusable assets</td>
     <td class="tg-0pky">S-Group Solutions</td>
@@ -625,7 +689,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Communication and collaboration</td>
     <td class="tg-0pky">Lack of communication when creating reusable assets</td>
     <td class="tg-0pky">S-Group Solutions</td>
@@ -636,7 +700,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Communication and collaboration</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
@@ -644,10 +708,10 @@
     <td class="tg-0pky">Open communication (e.g., design discussion) and criticism culture (e.g., code reviews) help establish trust between the central team and consumer teams</td>
     <td class="tg-0pky">Google, IBM</td>
     <td class="tg-0pky">Google: <br> <a href="https://doi.org/10.1145/2593850.2593854"><span style="color:#905">https://doi.org/10.1145/2593850.2593854</span></a>, <br> IBM: <br> <a href="https://ieeexplore.ieee.org/document/5386734"><span style="color:#905">https://ieeexplore.ieee.org/document/5386734</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/communication-tooling" target="_blank" rel="noopener noreferrer">Communication Tooling</a></td>
+    <td class="tg-0pky">Communication Tooling</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Communication and collaboration</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
@@ -658,7 +722,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Communication and collaboration</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
@@ -666,10 +730,10 @@
     <td class="tg-0pky">Have collaboration and communication tools to break the silo and avoid effort duplication.</td>
     <td class="tg-0pky">PayPal, Zalando,Philips Healthcare</td>
     <td class="tg-0pky">PayPal: <br> <a href="https://doi.org/10.1177/00081256211044830"><span style="color:#905">https://doi.org/10.1177/00081256211044830</span></a>,<br> Zalando:<br> <a href="https://doi.org/10.1177/00081256211044830"><span style="color:#905">https://doi.org/10.1177/00081256211044830</span></a>,<br> Philips Healthcare:<br> <a href="https://doi.org/10.1177/00081256211044830"><span style="color:#905">https://doi.org/10.1177/00081256211044830</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/communication-tooling" target="_blank" rel="noopener noreferrer">Communication Tooling</a></td>
+    <td class="tg-0pky">Communication Tooling</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Communication and collaboration</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
@@ -680,7 +744,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Communication and collaboration</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
@@ -691,7 +755,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Communication and collaboration</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
@@ -702,7 +766,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky">Unwilling to contribute or accept contributions</td>
     <td class="tg-0pky">GlobalSoft, Google, HP</td>
@@ -710,21 +774,21 @@
     <td class="tg-0pky">Collaborative development</td>
     <td class="tg-0pky">GlobalSoft</td>
     <td class="tg-0pky">GlobalSoft:<br> <a href="https://researchrepository.ul.ie/articles/thesis/Supporting_product_development_with_software_from_the_bazaar/19831822?file=35257462"><span style="color:#905">https://researchrepository.ul.ie/articles/thesis/Supporting_product_development_with_software_from_the_bazaar/19831822?file=35257462</span></a>, <br> <a href="https://doi.org/10.1016/j.infsof.2011.06.007"><span style="color:#905">https://doi.org/10.1016/j.infsof.2011.06.007</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/contracted-contributor" target="_blank" rel="noopener noreferrer">Contracted contributor</a></td>
+    <td class="tg-0pky">Contracted contributor</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky">Unwilling to contribute or accept contributions</td>
     <td class="tg-0pky">GlobalSoft, Google, HP</td>
     <td class="tg-0pky">GlobalSoft: <br> <a href="https://researchrepository.ul.ie/articles/thesis/Supporting_product_development_with_software_from_the_bazaar/19831822?file=35257462"><span style="color:#905">https://researchrepository.ul.ie/articles/thesis/Supporting_product_development_with_software_from_the_bazaar/19831822?file=35257462</span></a>,<br> <a href="https://doi.org/10.1016/j.infsof.2011.06.007"><span style="color:#905">https://doi.org/10.1016/j.infsof.2011.06.007</span></a>, <br> Google: <br> <a href="https://doi.org/10.1145/2593850.2593854"><span style="color:#905">https://doi.org/10.1145/2593850.2593854</span></a>,<br> HP: <br> <a href="https://link.springer.com/chapter/10.1007/978-0-387-09684-1_8"><span style="color:#905">https://link.springer.com/chapter/10.1007/978-0-387-09684-1_8</span></a>, <br> chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/<a href="https://shiftleft.com/mirrors//www.hpl.hp.com/techreports/2002/HPL-2002-12.pdf"><span style="color:#905">https://shiftleft.com/mirrors//www.hpl.hp.com/techreports/2002/HPL-2002-12.pdf</span></a>,<br> chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/<a href="https://ex.hhs.se/dissertations/220910-FULLTEXT01.pdf"><span style="color:#905">https://ex.hhs.se/dissertations/220910-FULLTEXT01.pdf</span></a></td>
-    <td class="tg-0pky">Suggested to alternate between feature development and code quality improvement phases and promote a culture of code reuse among managers and developers.</td>
+    <td class="tg-0pky">Suggested to alternate between feature development and code quality improvement Themes and promote a culture of code reuse among managers and developers.</td>
     <td class="tg-0pky">Google</td>
     <td class="tg-0pky">Google:<br> <a href="https://doi.org/10.1145/2593850.2593854"><span style="color:#905">https://doi.org/10.1145/2593850.2593854</span></a></td>
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky">Unwilling to contribute or accept contributions</td>
     <td class="tg-0pky">GlobalSoft, Google, HP</td>
@@ -732,10 +796,10 @@
     <td class="tg-0pky">Suggested to foster transparency under the participatory reuse environment, reward collaboration with team incentives, avoid competition, and share best practices.</td>
     <td class="tg-0pky">HP </td>
     <td class="tg-0pky">HP: <br> <a href="https://link.springer.com/chapter/10.1007/978-0-387-09684-1_8"><span style="color:#905">https://link.springer.com/chapter/10.1007/978-0-387-09684-1_8</span></a>, <br> chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/<a href="https://shiftleft.com/mirrors//www.hpl.hp.com/techreports/2002/HPL-2002-12.pdf"><span style="color:#905">https://shiftleft.com/mirrors//www.hpl.hp.com/techreports/2002/HPL-2002-12.pdf</span></a>,<br> chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/<a href="https://ex.hhs.se/dissertations/220910-FULLTEXT01.pdf"><span style="color:#905">https://ex.hhs.se/dissertations/220910-FULLTEXT01.pdf</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/praise-participants" target="_blank" rel="noopener noreferrer">Praise Participants</a></td>
+    <td class="tg-0pky">Praise Participants</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky">Unwilling to contribute or accept contributions</td>
     <td class="tg-0pky">GlobalSoft, Google, HP</td>
@@ -743,10 +807,10 @@
     <td class="tg-0pky">Suggested to foster transparency under the participatory reuse environment, reward collaboration with team incentives, avoid competition, and share best practices.</td>
     <td class="tg-0pky">HP </td>
     <td class="tg-0pky">HP: <br> <a href="https://link.springer.com/chapter/10.1007/978-0-387-09684-1_8"><span style="color:#905">https://link.springer.com/chapter/10.1007/978-0-387-09684-1_8</span></a>, <br> chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/<a href="https://shiftleft.com/mirrors//www.hpl.hp.com/techreports/2002/HPL-2002-12.pdf"><span style="color:#905">https://shiftleft.com/mirrors//www.hpl.hp.com/techreports/2002/HPL-2002-12.pdf</span></a>,<br> chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/<a href="https://ex.hhs.se/dissertations/220910-FULLTEXT01.pdf"><span style="color:#905">https://ex.hhs.se/dissertations/220910-FULLTEXT01.pdf</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/trusted-committer" target="_blank" rel="noopener noreferrer">Trusted Committer</a></td>
+    <td class="tg-0pky">Trusted Committer</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky">Unwilling to contribute or accept contributions</td>
     <td class="tg-0pky">GlobalSoft, Google, HP</td>
@@ -754,10 +818,10 @@
     <td class="tg-0pky">Incentives and rewards are important to encourage participatory reuse adoption and contribution</td>
     <td class="tg-0pky">Google, Philips Healthcare, Lucent, PayPal, Zalando </td>
     <td class="tg-0pky">Google: <br> <a href="https://doi.org/10.1145/2593850.2593854"><span style="color:#905">https://doi.org/10.1145/2593850.2593854</span></a>, <br> Philips Healthcare: <br> <a href="https://ieeexplore.ieee.org/document/4497766"><span style="color:#905">https://ieeexplore.ieee.org/document/4497766</span></a>, <br> <a href="https://doi.org/10.1177/00081256211044830"><span style="color:#905">https://doi.org/10.1177/00081256211044830</span></a>,<br> Lucent: <br> <a href="https://dl.acm.org/doi/10.1145/1134285.1134352"><span style="color:#905">https://dl.acm.org/doi/10.1145/1134285.1134352</span></a>, <br> PayPal: <br> <a href="https://doi.org/10.1177/00081256211044830"><span style="color:#905">https://doi.org/10.1177/00081256211044830</span></a>,<br> Zalando: <br> <a href="https://doi.org/10.1177/00081256211044830"><span style="color:#905">https://doi.org/10.1177/00081256211044830</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/praise-participants" target="_blank" rel="noopener noreferrer">Praise Participants</a></td>
+    <td class="tg-0pky">Praise Participants</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky">Unwilling to contribute or accept contributions</td>
     <td class="tg-0pky">GlobalSoft, Google, HP</td>
@@ -765,10 +829,10 @@
     <td class="tg-0pky">Incentives and rewards are important to encourage participatory reuse adoption and contribution</td>
     <td class="tg-0pky">Google, Philips Healthcare, Lucent, PayPal, Zalando </td>
     <td class="tg-0pky">Google: <br> <a href="https://doi.org/10.1145/2593850.2593854"><span style="color:#905">https://doi.org/10.1145/2593850.2593854</span></a>, <br> Philips Healthcare: <br> <a href="https://ieeexplore.ieee.org/document/4497766"><span style="color:#905">https://ieeexplore.ieee.org/document/4497766</span></a>, <br> <a href="https://doi.org/10.1177/00081256211044830"><span style="color:#905">https://doi.org/10.1177/00081256211044830</span></a>,<br> Lucent: <br> <a href="https://dl.acm.org/doi/10.1145/1134285.1134352"><span style="color:#905">https://dl.acm.org/doi/10.1145/1134285.1134352</span></a>, <br> PayPal: <br> <a href="https://doi.org/10.1177/00081256211044830"><span style="color:#905">https://doi.org/10.1177/00081256211044830</span></a>,<br> Zalando: <br> <a href="https://doi.org/10.1177/00081256211044830"><span style="color:#905">https://doi.org/10.1177/00081256211044830</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/trusted-committer" target="_blank" rel="noopener noreferrer">Trusted Committer</a></td>
+    <td class="tg-0pky">Trusted Committer</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky">Unwilling to contribute or accept contributions</td>
     <td class="tg-0pky">GlobalSoft, Google, HP</td>
@@ -779,7 +843,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky">Lack of management support due to unawareness of reuse benefits</td>
     <td class="tg-0pky">S-Group Solutions</td>
@@ -787,10 +851,10 @@
     <td class="tg-0pky">Suggested to measure the participatory reuse benefits</td>
     <td class="tg-0pky">S-Group Solutions</td>
     <td class="tg-0pky">S-Group Solutions: <br> DOI: 10.37190/e-Inf220110., <br> <a href="https://doi.org/10.1145/3593434.3593466"><span style="color:#905">https://doi.org/10.1145/3593434.3593466</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/crossteam-project-valuation" target="_blank" rel="noopener noreferrer">Cross-Team Project Valuation</a></td>
+    <td class="tg-0pky">Cross-Team Project Valuation</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky">Lack of management support due to unawareness of reuse benefits</td>
     <td class="tg-0pky">S-Group Solutions</td>
@@ -798,10 +862,10 @@
     <td class="tg-0pky">Management support improves the roles establishment and reduces the middle managers’ concern in participatory reuse</td>
     <td class="tg-0pky">Lucent, Ericsson</td>
     <td class="tg-0pky">Lucent: <br> <a href="https://doi.org/10.1145/1083258.1083264"><span style="color:#905">https://doi.org/10.1145/1083258.1083264</span></a>, <br> <a href="https://dl.acm.org/doi/10.1145/1134285.1134352"><span style="color:#905">https://dl.acm.org/doi/10.1145/1134285.1134352</span></a>, <br> Ericsson:<br> <a href="https://doi.org/10.48550/arXiv.2309.15175"><span style="color:#905">https://doi.org/10.48550/arXiv.2309.15175</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/review-committee" target="_blank" rel="noopener noreferrer">Review Committee</a></td>
+    <td class="tg-0pky">Review Committee</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky">Lack of management support due to unawareness of reuse benefits</td>
     <td class="tg-0pky">S-Group Solutions</td>
@@ -809,10 +873,10 @@
     <td class="tg-0pky">Align the participatory reuse benefits with the business objectives to ensure the success of its adoption</td>
     <td class="tg-0pky">HP</td>
     <td class="tg-0pky">HP: <br> <a href="https://doi.org/10.1145/581339.581363"><span style="color:#905">https://doi.org/10.1145/581339.581363</span></a> </td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/crossteam-project-valuation" target="_blank" rel="noopener noreferrer">Cross-Team Project Valuation</a></td>
+    <td class="tg-0pky">Cross-Team Project Valuation</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky">Lack of management support due to unawareness of reuse benefits</td>
     <td class="tg-0pky">S-Group Solutions</td>
@@ -823,7 +887,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky">Hard to enforce participatory reuse, especially under time pressure</td>
     <td class="tg-0pky">Google</td>
@@ -831,10 +895,10 @@
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/contracted-contributor" target="_blank" rel="noopener noreferrer">Contracted contributor</a></td>
+    <td class="tg-0pky">Contracted contributor</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky">Hard to enforce participatory reuse, especially under time pressure</td>
     <td class="tg-0pky">Google</td>
@@ -842,10 +906,10 @@
     <td class="tg-0pky">Having a central team — whether technical, research oriented,or business-focused—improves initiating, supporting, and sustaining participatory reuse initiatives within large organizations</td>
     <td class="tg-0pky">Philips Healthcare,Lucent, Ericsson</td>
     <td class="tg-0pky">Philips Healthcare: <br> <a href="https://ieeexplore.ieee.org/document/4497766"><span style="color:#905">https://ieeexplore.ieee.org/document/4497766</span></a>,<br> Lucent: <br> <a href="https://dl.acm.org/doi/10.1145/1134285.1134352"><span style="color:#905">https://dl.acm.org/doi/10.1145/1134285.1134352</span></a>, <br> <a href="https://dl.acm.org/doi/10.1145/1646353.1646392"><span style="color:#905">https://dl.acm.org/doi/10.1145/1646353.1646392</span></a>, <br> Ericsson:<br> <a href="https://doi.org/10.48550/arXiv.2309.15175"><span style="color:#905">https://doi.org/10.48550/arXiv.2309.15175</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/core-team" target="_blank" rel="noopener noreferrer">Core Team</a></td>
+    <td class="tg-0pky">Core Team</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky">Hard to enforce participatory reuse, especially under time pressure</td>
     <td class="tg-0pky">Google</td>
@@ -856,7 +920,7 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
@@ -864,10 +928,10 @@
     <td class="tg-0pky">Provide ongoing support after initial training to ensure the successful participatory reuse adoption and avoid setbacks</td>
     <td class="tg-0pky">PayPal </td>
     <td class="tg-0pky">PayPal: <br> <a href="https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/"><span style="color:#905">https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/group-support" target="_blank" rel="noopener noreferrer">Group Support</a></td>
+    <td class="tg-0pky">Group Support</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
@@ -875,10 +939,10 @@
     <td class="tg-0pky">Assessing the suitability of adopting participatory reuse before adopting is important</td>
     <td class="tg-0pky">PayPal </td>
     <td class="tg-0pky">PayPal: <br> <a href="https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/"><span style="color:#905">https://innersourcecommons.org/learn/books/adopting-innersource-principles-and-case-studies/</span></a></td>
-    <td class="tg-0pky"><a href="https://patterns.innersourcecommons.org/p/maturity-model" target="_blank" rel="noopener noreferrer">Maturity Model</a></td>
+    <td class="tg-0pky">Maturity Model</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Phase 3: Managing participatory reuse</td>
+    <td class="tg-0pky">Theme 3: Managing participatory reuse</td>
     <td class="tg-0pky">Organizational support</td>
     <td class="tg-0pky">Lack of reuse measurements to track the participatory reuse progress</td>
     <td class="tg-0pky">S-Group Solutions</td>
@@ -889,3 +953,41 @@
     <td class="tg-0pky"></td>
   </tr>
 </tbody></table>
+
+
+<script>
+function filterTable() {
+  var nameFilter = document.getElementById("themeInput").value.toUpperCase();
+  var countryFilter = document.getElementById("areaInput").value.toUpperCase();
+  var cityFilter = document.getElementById("challengeInput").value.toUpperCase();
+
+  var table = document.getElementById("myTable");
+  var tr = table.getElementsByTagName("tr");
+
+  for (var i = 1; i < tr.length; i++) { // skip header row
+    var tdName = tr[i].getElementsByTagName("td")[0];
+    var tdCountry = tr[i].getElementsByTagName("td")[1];
+    var tdCity = tr[i].getElementsByTagName("td")[2];
+
+    if (tdName && tdCountry && tdCity) {
+      var nameText = tdName.textContent || tdName.innerText;
+      var countryText = tdCountry.textContent || tdCountry.innerText;
+      var cityText = tdCity.textContent || tdCity.innerText;
+
+      if (
+        nameText.toUpperCase().indexOf(nameFilter) > -1 &&
+        countryText.toUpperCase().indexOf(countryFilter) > -1 &&
+        cityText.toUpperCase().indexOf(cityFilter) > -1
+      ) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
+
+</body>
+</html>
