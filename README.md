@@ -6,8 +6,8 @@ Organizations, such as Ericsson, Philips Healthcare, and Lucent, are increasingl
 The file table.md provides a preview of the catalog, while the file Catalog.html includes a filter function to help users find the right information more quickly.
 
 ## The themes of this catalog
-There are three themes for participatory reuse challenges, solutions, and lessons learned: **developing reusable assets, using reusable assets, and managing reusable assets**. <br> 
-The first two themes—developing and using reusable assets—are derived from the "development for and with reuse" concept, while managing reusable assets covers the remaining aspects.
+There are three themes for participatory reuse challenges, solutions, and lessons learned: **developing reusable assets, using reusable assets, and managing participatory reuse**. <br> 
+The first two themes—developing and using reusable assets—are derived from the "development for and with reuse" concept, while managing participatory reuse covers the remaining aspects.
 
 ## The areas under each theme
 | Themes                                          | Areas                                                                                                                                                  |
