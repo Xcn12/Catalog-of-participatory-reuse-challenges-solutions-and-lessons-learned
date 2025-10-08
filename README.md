@@ -32,6 +32,9 @@ Column 9: I. Mapped InnerSource patterns from InnerSource Commons
 The InnerSource pattern in Column 9 originates from [InnerSource Common](https://innersourcecommons.org/). You can access the patterns via [InnerSource Pattern](https://patterns.innersourcecommons.org/).
 
 ## Contact information
-Contact me if you are interested in sharing your participatory reuse challenges, solutions, and lessons learned. Email: xingru.chen@bth.se
+Contact our research group if you are interested in sharing your experiences with participatory reuse, including challenges, solutions, and lessons learned. 
+Xingru Chen  Email: xingru.chen@bth.se
+Muhammad Usman Email: muhammad.usman@bth.se
+Deepika Badampudi  Email: deepika.badampudi@bth.se
 
 	
